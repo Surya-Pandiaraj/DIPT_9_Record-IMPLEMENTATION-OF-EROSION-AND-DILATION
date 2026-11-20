@@ -4,7 +4,7 @@
 
 ## EX. No. 9 : RECORD IMPLEMENTATION OF EROSION AND DILATION
 
-## Aim
+## Aim:
 
 To write a Python program using OpenCV to perform morphological operations such as Erosion and Dilation on an image.
 
@@ -13,7 +13,7 @@ The program performs the following operations:
 - Image Erosion
 - Image Dilation
 
-## Software Used
+## Software Used:
 
 - Anaconda – Python 3.7
 - Jupyter Notebook / VS Code
@@ -21,7 +21,7 @@ The program performs the following operations:
 - NumPy
 - Matplotlib
 
-## Algorithm
+## Algorithm:
 
 ### Step 1:
 
@@ -43,13 +43,13 @@ Display the original image.
 
 Create a structuring element (kernel) of suitable size.
 
-### Step 6: Image Erosion
+### Step 6: Image Erosion:
 
 - Apply the erosion operation using the created kernel.
 - Remove pixels from the boundaries of foreground objects.
 - Display the eroded image.
 
-### Step 7: Image Dilation
+### Step 7: Image Dilation:
 
 - Apply the dilation operation using the same kernel.
 - Add pixels to the boundaries of foreground objects.
@@ -59,17 +59,17 @@ Create a structuring element (kernel) of suitable size.
 
 Compare the original, eroded, and dilated images.
 
-## Program
+## Program:
 
-## Developed By
+Developed By
 
 **Name:** SURYA P
 
 **Register No:** 212224230280
 
-## Output
+## Output:
 
-### Original Image
+### Original Image:
 ```
 import cv2
 import matplotlib.pyplot as plt
@@ -80,10 +80,10 @@ plt.axis("off")
 plt.show()
 
 ```
-<img width="647" height="461" alt="image" src="https://github.com/user-attachments/assets/45bcafe2-51ca-48e8-9054-d0164e388004" />
+<img width="515" height="531" alt="image" src="https://github.com/user-attachments/assets/cdb92db3-80aa-48fe-be19-39cbdabed1b9" />
 
 
-### Erosion
+### Erosion:
 ```
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
 erosion = cv2.erode(img, kernel, iterations=1)
@@ -92,10 +92,11 @@ plt.title("Image Erosion")
 plt.axis("off")
 plt.show()
 ```
-<img width="647" height="438" alt="image" src="https://github.com/user-attachments/assets/1536a21d-a3e1-4662-b7b0-42c4c7fa60e9" />
+
+<img width="541" height="537" alt="image" src="https://github.com/user-attachments/assets/3a856da9-5166-4858-bd42-55add16eef4d" />
 
 
-### Dilation
+### Dilation:
 ```
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
 dilation = cv2.dilate(img, kernel, iterations=1)
@@ -104,8 +105,9 @@ plt.title("Image Dilation")
 plt.axis("off")
 plt.show()
 ```
-<img width="637" height="437" alt="image" src="https://github.com/user-attachments/assets/4ebaa2d3-e6e5-46f7-be09-551b7389b06f" />
+<img width="535" height="528" alt="image" src="https://github.com/user-attachments/assets/1784360c-4866-4abf-9a21-7016afefad4e" />
 
-## Result
+
+## Result:
 
 Thus, the morphological operations **Erosion** and **Dilation** are successfully implemented using OpenCV.
